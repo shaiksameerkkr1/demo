@@ -31,6 +31,11 @@ h1{
   font-size: 4rem;
   line-height: 1.5;
 }
+/* h2{
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+} */
 hr{
 width: 5%;
 margin: auto;
@@ -50,6 +55,7 @@ border-width: 7px;
 
 /* navigation bar */
 .navbar{
+  margin: auto;
   padding-bottom: 4.5rem;
 }
 .navbar-brand{
@@ -114,29 +120,26 @@ border-width: 7px;
 .education-h2{
   padding-bottom: 3rem;
 }
+.edu-column{
+  padding: 2% 3%;
+}
 
-/* testimonials */
-#testimonials{
-  background-color: #ef8172;
+/* certificates */
+#certificates{
   padding: 7% 15%;
+  background-color: #6E7C7C;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .testimonial-image{
+  margin: 20px;
   width: 10%;
   border-radius: 100%
-  margin: 20px;
 }
 .carousel-item{
   padding: 7% 15%;
 }
 
-#press{
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-}
-.press-img{
-  width: 15%;
-  margin: 20px 20px 50px;
+.certificate-img{
+  width: 60%;
 }
