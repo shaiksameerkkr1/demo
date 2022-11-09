@@ -7,10 +7,10 @@
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kolker+Brush&family=Montserrat:wght@500;700;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kolker+Brush&family=Montserrat:wght@500;700;900&family=Oswald:wght@400;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <!-- bootstrap cdn -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- css -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"
@@ -27,31 +27,34 @@
   <section id="title">
 
     <!-- Nav Bar -->
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <nav class="navbar navbar-expand-lg navbar-light">
         <a href="#title" class="navbar-brand">sameer shaik</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#title" class="nav-link">home</a>
+            <!--mr-auto mt-2 mt-lg-0 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#title">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a href="#education" class="nav-link">education</a>
+              <a class="nav-link" href="#education">education</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">skills</a>
-            </li>
+            <!-- <li class="nav-item">
+        <a href="" class="nav-link">skills</a>
+      </li> -->
             <li class="nav-item">
               <a href="#certificates" class="nav-link">certifications</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">contact me</a>
+              <a href="#projects" class="nav-link">projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cta" class="nav-link">contact me</a>
             </li>
           </ul>
         </div>
@@ -64,9 +67,8 @@
         <div class="col-lg-6">
           <h1>Hi, iam Sameer.</h1>
           <p>Designer, Developer and a technophile</p>
-          <button type="button" class="btn btn-dark btn-lg mail-button"><i class="fa-solid fa-envelope"></i> mail</button>
-          <!-- <button type="button">mail</button> -->
-          <!-- <button type="button">instagram</button> -->
+          <a href="mailto:shaiksameerk007@gmail.com"><button type="button" class="btn btn-dark btn-lg mail-button"><i class="fa-solid fa-envelope"></i> mail</button></a>
+          <a href="https://www.linkedin.com/in/shaik-sameer-392aa7217/"><button type="button" class="btn btn-lg linkedinbtn">Linked <i class="linkedin fa-brands fa-linkedin"></i></button></a>
         </div>
         <div class="col-lg-6">
           <img class="title-image" src="images/sameercut1.png" alt="iphone-mockup">
@@ -89,7 +91,7 @@
                 in Java, and also worked as an intern in wipro as java full stack developer for about four months. I learned a lot, during the internship period. Now I am looking to get a job to further elevate my skills.</p>
             </div>
             <div class="col-lg-4 col-md-12">
-              <img src="images/sam.png" alt="sameer" class="about-img">
+              <img src="images/psk.jpg" alt="sameer" class="about-img">
             </div>
             <div class="col-lg-4 col-md-12">
               <table class="table">
@@ -120,7 +122,6 @@
               </table>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -148,31 +149,9 @@
     </div>
   </section>
 
-  <!-- education -->
+  <!-- education cards -->
   <section id="education">
     <h2 class="education-h2">MY <span style="color:#D49B54">EDUCATION</span></h2>
-    <!-- <div class="row">
-      <div class="education col-lg-4">
-        <h2>10th Standard</h2>
-        <p style="color:#0C0705">Narayana High School, Nellore</p>
-        <p style="color:#0C0705">Passed my SSC examination <strong>with 9.5 GPA</strong></p>
-      </div>
-      <div class="education col-lg-4">
-        <h2>12th Standard</h2>
-        <p style="color:#0C0705">Narayana Junior College, Nellore</p>
-        <p style="color:#0C0705">Passed my Inter board examination <strong>with 96%</strong></p>
-      </div>
-      <div class="education col-lg-4">
-        <h2>Bachelor of Technology</h2>
-        <p>ELECTRONICS AND COMMUNICATION ENGINEERING</p>
-        <p style="color:#0C0705">Jawaharlal Nehru Technological University, Ananthapur</p>
-        <p style="color:#0C0705">Geethanjali Institute of Science And Technology, Nellore</p>
-        <p style="color:#0C0705">Passed my Bachelors degree with <strong>FIRST CLASS DISTINCTION</strong></p>
-      </div>
-    </div> -->
-
-    <!-- CARDS -->
-
     <div class="row">
       <div class="edu-column col-lg-4 col-md-6">
         <div class="card" style="background-color : #F5F0E3">
@@ -181,7 +160,7 @@
           </div>
           <div class="card-body">
             <p style="color:#0C0705">Narayana High School, Nellore</p>
-            <p style="color:#0C0705">Passed my SSC exam <strong>with 9.5 GPA</strong></p>
+            <p style="color:#0C0705">Passed my SSC exams <strong>with 9.5 GPA</strong></p>
           </div>
         </div>
       </div>
@@ -193,7 +172,7 @@
           </div>
           <div class="card-body">
             <p style="color:#0C0705">Narayana Junior College, Nellore</p>
-            <p style="color:#0C0705">Passed my board exam <strong>with 96%</strong></p>
+            <p style="color:#0C0705">Passed my board exams <strong>with 96%</strong></p>
           </div>
         </div>
       </div>
@@ -215,11 +194,6 @@
     <P>ACADEMIC CERTIFICATES WILL BE PROVIDED ON REQUEST</P>
   </section>
 
-
-
-
-
-
   <!-- certificates -->
   <section id="certificates">
     <h2>MY <span style="color:gold">CERTIFICATIONS</span></h2>
@@ -227,31 +201,45 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img class="certificate-img" src="images/wipro.png" alt="...">
+          <div class="ct" style="width:">
+            <img class="certificate-img" src="images/wipro.png" alt="...">
+          </div>
         </div>
 
         <div class="carousel-item">
-          <img class="certificate-img" src="images/java-HR.png" alt="...">
+          <div class="ct" style="max-width:100%;">
+            <img class="certificate-img" src="images/java-HR.png" alt="...">
+          </div>
         </div>
 
         <div class="carousel-item">
-          <img class="certificate-img" src="images/ps-HR.png" alt="...">
+          <div class="ct" style="max-width:100%;">
+            <img class="certificate-img" src="images/ps-HR.png" alt="...">
+          </div>
         </div>
 
         <div class="carousel-item">
-          <img class="certificate-img" src="images/scilab.png" alt="...">
+          <div class="ct" style="max-width:100%;">
+            <img class="certificate-img" src="images/scilab.png" alt="...">
+          </div>
         </div>
 
         <div class="carousel-item">
-          <img class="certificate-img" src="images/android.png" alt="...">
+          <div class="ct" style="max-width:100%;">
+            <img class="certificate-img" src="images/android.png" alt="...">
+          </div>
         </div>
 
         <div class="carousel-item">
-          <img class="certificate-img" src="images/es.png" alt="...">
+          <div class="ct" style="max-width:100%;">
+            <img class="certificate-img" src="images/es.png" alt="...">
+          </div>
         </div>
 
         <div class="carousel-item">
-          <img class="certificate-img" src="images/git.png" alt="...">
+          <div class="ct" style="max-width:100%;">
+            <img class="certificate-img" src="images/git.png" alt="...">
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#certificates-carousel" role="button" data-slide="prev">
@@ -264,26 +252,116 @@
     <P>ACADEMIC CERTIFICATES WILL BE PROVIDED ON REQUEST</P>
   </section>
 
+  <!-- projects -->
+  <section id="projects">
+    <h2 style="margin-bottom : 4rem">MY <span style="color:#FF6464">PROJECTS</span></h2>
+
+    <div class="project-card card mb-3" style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/pizza.png" class="img-fluid rounded-start" alt="Online Pizza Ordering System">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Online Pizza Ordering System</h5>
+            <ul>
+              <li>
+                <p class="card-text-p">Worked with a team on an online pizza ordering system.</p>
+              </li>
+              <li>
+                <p class="card-text-p">Involved in document analysis and technical feasibility discussions for implementing new functionalities.</p>
+              </li>
+              <li>
+                <p class="card-text-p">Implemented the Graphic User Interface GUI by coding in HTML5, CSS3, Bootstrap, Javascript, and jQuery.</p>
+              </li>
+              <li>
+                <p class="card-text-p">Analyzed system capabilities to resolve questions of program intent, output requirements, input data acquisition, programming techniques, and controls.</p>
+              </li>
+              <li>
+                <p class="card-text-p">Integrated the dynamic pages with React, and jQuery to make the pages dynamic</p>
+              </li>
+            </ul>
+            <p class="card-text" style="text-align: center;"><small class="text-muted">internship project</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card card mb-3" style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/iot.jpeg" class="img-fluid rounded-start" alt="IOT-based home security system">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">IOT-based home security system by motion sensing using Raspberry pi</h5>
+            <ul>
+              <li>
+                <p class="card-text-p">The main aim of this project is to propose IoT-based theft detection using raspberry pi.</p>
+              </li>
+              <li>
+                <p class="card-text-p">We use image processing on live images to detect theft using motion and highlight the area where motion occurred.</p>
+              </li>
+              <li>
+                <p class="card-text-p">In this system we use a camera, raspberry pi, and a circuit with LCD display IR for night vision.</p>
+              </li>
+              <li>
+                <p class="card-text-p">This system transmits the signals with the help of raspberry pi.</p>
+              </li>
+            </ul>
+            <p class="card-text" style="text-align: center;"><small class="text-muted">academic project</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card card mb-3" style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/arduino.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">water level sensing using arduino and ultrasonic sensor</h5>
+            <ul>
+              <li>
+                <p class="card-text-p">Water Level Indicator and Controller using Arduino” project, the water is being measured by using ultrasonic sensors.</p>
+              </li>
+              <li>
+                <p class="card-text-p">Initially, the tank is considered to be empty.</p>
+              </li>
+              <li>
+                <p class="card-text-p">The motor pump is automatically turned ON when the water level becomes low and turned OFF when the tank is full.</p>
+              </li>
+            </ul>
+            <p class="card-text" style="text-align: center;"><small class="text-muted">mini project</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-  <!-- Call to Action -->
+  <!--Call to Action -->
 
-  <!-- <section id="cta">
+  <section id="cta">
+    <h4>"Success is best when its shared."</h4>
+    <h2 class="cta-des" style="margin: 3% 5%;">wanna hire me?</h2>
+    <hr>
+    <h3 class="cta-des">JUST DROP ME A LINE</h3>
+    <a href="mailto:shaiksameerk007@gmail.com"><button type="button" class="btn btn-dark btn-lg mail-button"><i class="fa-solid fa-envelope"></i> mail</button></a>
+    <a href="https://www.linkedin.com/in/shaik-sameer-392aa7217/"><button type="button" class="btn btn-lg linkedinbtn">Linked <i class="linkedin fa-brands fa-linkedin"></i></button></a>
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
-  </section> -->
+  </section>
 
 
   <!-- Footer -->
 
-  <!-- <footer id="footer">
+  <footer id="footer">
 
-    <p>© Copyright TinDog</p>
+    <p>© Copyright sameer</p>
 
-  </footer> -->
+  </footer>
 
 
 </body>
